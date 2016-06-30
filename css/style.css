@@ -1,0 +1,71 @@
+@font-face {
+  font-family: Monaco;
+  src: local("Monaco"),
+       url(fonts/monaco.ttf);
+  font-weight: bold;
+}
+
+html, body {
+    height: 100%;
+}
+body {
+    background-color: #1C0037;
+    color: #C4C4C4;
+    counter-reset: lines;
+    font-family: 'Monaco';
+    font-size: 13px;
+    margin: 0;
+}
+
+.menu {
+    background-color: #5D576B;
+    float: left;
+    height: 100%;
+    width: 50px;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.menu li {
+    padding: 10px 0;
+    font-size: 23px;
+}
+
+.menu li:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.menu li.active {
+    background-color: #C4C4C4;
+    color: #1C0037;
+}
+
+.submenu {
+    background-color: #C4C4C4;
+    float: left;
+    height: 100%;
+    width: 120px;
+}
+
+.code {
+    float: left;
+    padding: 5px 15px;
+}
+
+.code p {
+    padding-left: 10px;
+    counter-increment: lines;
+}
+
+.code p:before {
+    color: #717171;
+    content: counter(lines);
+    font-family: "Lucida Console";
+    padding-right: 20px;
+}

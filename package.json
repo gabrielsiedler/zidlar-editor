@@ -1,0 +1,23 @@
+{
+  "name": "zidlar",
+  "version": "1.0.0",
+  "description": "The best editor you can find.",
+  "main": "js/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "Zidlar",
+    "editor"
+  ],
+  "author": "Gabriel Siedler",
+  "license": "",
+  "homepage": "",
+  "devDependencies": {
+    "electron-prebuilt": "^1.2.0"
+  }
+}
