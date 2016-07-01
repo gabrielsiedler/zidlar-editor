@@ -11,12 +11,11 @@
     <aside class="menu">
         <ul>
             <li class="active"><i class="fa fa-file-code-o"></i></li>
-            <li title="Auto-bug solver"><i class="fa fa-bug"></i></li>
-            <li title="Global repository 1-click integration"><i class="fa fa-code-fork"></i></li>
-            <li title="Share this masterpiece-line-code on facebook"><i class="fa fa-facebook"></i></li>
-            <li title="Adjust coffee alarm clock"><i class="fa fa-coffee"></i></li>
-            <li title="Change to 3d perspective"><i class="fa fa-cube"></i></li>
-            <li title="Develop via whatsapp"><i class="fa fa-whatsapp"></i></li>
+            <li data-click="auto-bug solver" title="Auto-bug solver"><i class="fa fa-bug"></i></li>
+            <li data-click="masterpiece-line-code sharing" title="Share this masterpiece-line-code on facebook"><i class="fa fa-facebook"></i></li>
+            <li data-click="coffee alarm clock adjuster" title="Adjust coffee alarm clock"><i class="fa fa-coffee"></i></li>
+            <li data-click="3d perspective" title="Change to 3d perspective"><i class="fa fa-cube"></i></li>
+            <li data-click="development through whatsapp" title="Develop via whatsapp"><i class="fa fa-whatsapp"></i></li>
         </ul>
     </aside>
     <section class="submenu">
@@ -32,26 +31,42 @@
         <div class="open-files">
             <span class="file-name">
                 * untitled
-                <i class="fa fa-times" title="Close file"></i>
-                <i class="fa fa-light fa-bolt" title="Improve code performance"></i>
-                <i class="fa fa-light fa-puzzle-piece" title="Auto-refactor this file"></i>
+                <i data-click="close file" data-comment="Closing files is a pro feature." class="fa fa-times" title="Close file"></i>
+                <i data-click="improve code performance" class="fa fa-light fa-bolt" title="Improve code performance"></i>
+                <i data-click="auto-refactor" class="fa fa-light fa-puzzle-piece" title="Auto-refactor this file"></i>
             </span>
         </div>
         <div class="code">
             <input type="text" value=""></input>
+            <img src="./img/logo.png" />
         </div>
     </section>
 
+    <div id="modal">
+        <div class="content">
+            <div class="fa fa-dollar"></div>
+            <div id="close" class="fa fa-times"></div>
+            <div class="messages">
+                <p>Unfortunately the feature</p>
+                <em id="feature">right click</em>
+                <p>is not available in the <span class="underline">evaluation version</span>.</p>
+                <div id="custom"></div>
+            </div>
+            <button id="yes">Get full version</button>
+            <button id="no">No, thanks</button>
+        </div>
+    </div>
+
     <footer>
-        <i class="fa fa-map" title="Shortcuts"></i>
-        <i class="fa fa-pie-chart" title="Your programming statistics"></i>
-        <i class="fa fa-heartbeat" title="Measure code health"></i>
+        <i data-click="shortcuts" class="fa fa-map" title="Shortcuts"></i>
+        <i data-click="statistics" class="fa fa-pie-chart" title="Your programming statistics"></i>
+        <i data-click="code health measurement" data-comment="Probably 'evaluation developer' level." class="fa fa-heartbeat" title="Measure code health"></i>
         <div class="right">
-            <a href="#">Spaces: 4</a>
-            <a href="#">UTF-8</a>
-            <a href="#">JS</a>
-            <i class="fa fa-thumbs-o-up" title="Send positive feedback"></i>
-            <i class="fa fa-credit-card" title="Get PRO version now!"></i>
+            <a data-click="identation spaces" href="#">Spaces: 4</a>
+            <a data-click="charset" href="#">UTF-8</a>
+            <a data-click="code highlight" href="#">JS</a>
+            <i data-click="feedback" data-comment="Even it being positive, we don't care." class="fa fa-thumbs-o-up" title="Send positive feedback"></i>
+            <i data-click="get pro version" data-comment="h3h3h3h3" class="fa fa-credit-card" title="Get PRO version now!"></i>
         </div>
     </footer>
   </body>

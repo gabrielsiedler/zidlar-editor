@@ -10,7 +10,8 @@ function createLoadingWindow() {
         width: 500,
         height: 600,
         icon: __dirname + '/../img/logo.png',
-        frame: false
+        frame: false,
+        resizable: false
     });
 
     loadingWindow.loadURL(`file://${__dirname}/../loading.html`);
@@ -29,12 +30,13 @@ function createWindow() {
     mainWindow = new BrowserWindow({
         width: 1200,
         height: 800,
-        icon: __dirname + '/../img/logo.png'
+        icon: __dirname + '/../img/logo.png',
+        resizable: false
     });
 
     mainWindow.loadURL(`file://${__dirname}/../index.html`);
 
-    mainWindow.webContents.openDevTools()
+    //mainWindow.webContents.openDevTools()
 
     mainWindow.on('closed', () => {
         mainWindow = null;
