@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/vendor/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/loading.css">
+</head>
+
+<body>
+    <img src="./img/logo.png" />
+    <div id="app-name">Zidlar Editor</div>
+    <div id="loader"><i class="fa fa-circle-o-notch fa-spin fa-4x fa-fw"></i></div>
+    <div id="loading-message">Loading...</div>
+
+    <script>
+        let $ = require('jquery');
+        const m = $('#loading-message');
+        const delay = 1000;
+        const messages = [
+            'Loading quantum states...',
+            'Loading auto-refactor...',
+            'Loading whatsapp integration...',
+            'Loading interface...'
+        ]
+
+        m.text(messages[0]);
+        setTimeout(() => {
+            m.text(messages[1]);
+            setTimeout(() => {
+                m.text(messages[2]);
+                setTimeout(() => {
+                    m.text(messages[3]);
+                }, delay);
+            }, delay);
+        }, delay);
+
+    </script>
+</body>
+</html>

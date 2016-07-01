@@ -1,0 +1,30 @@
+@font-face {
+    font-family: Monaco;
+    src: local("Monaco"),
+        url(fonts/monaco.ttf);
+    font-weight: bold;
+}
+
+body {
+    color: #1C0037;
+    font-family: Monaco;
+    text-align: center;
+}
+
+img {
+    width: 400px;
+    margin-top: 20px;
+}
+
+#app-name {
+    font-size: 30px;
+}
+
+#loader {
+    padding: 30px;
+}
+
+#loading-message {
+    position: absolute;
+    bottom: 10px;
+}
