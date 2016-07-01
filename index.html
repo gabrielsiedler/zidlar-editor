@@ -20,18 +20,45 @@
         </ul>
     </aside>
     <section class="submenu">
-        teste
+        <span class="header">
+            File explorer
+        </span>
+        <span class="file">
+            <span>untitled <i class="fa fa-file"></i></span>
+        </span>
+        
     </section>
-    <section class="code">
-        <span class="file-name">untitled</span>
-        <p>body {</p>
-        <p>    color: blue;</p>
-        <p>}</p>
+    <section class="main">
+        <div class="open-files">
+            <span class="file-name">
+                * untitled
+                <i class="fa fa-times" title="Close file"></i>
+                <i class="fa fa-light fa-bolt" title="Improve code performance"></i>
+                <i class="fa fa-light fa-puzzle-piece" title="Auto-refactor this file"></i>
+            </span>
+        </div>
+        <div class="code">
+            <input type="text" value=""></input>
+        </div>
     </section>
+
+    <footer>
+        <i class="fa fa-map" title="Shortcuts"></i>
+        <i class="fa fa-pie-chart" title="Your programming statistics"></i>
+        <i class="fa fa-heartbeat" title="Measure code health"></i>
+        <div class="right">
+            <a href="#">Spaces: 4</a>
+            <a href="#">UTF-8</a>
+            <a href="#">JS</a>
+            <i class="fa fa-thumbs-o-up" title="Send positive feedback"></i>
+            <i class="fa fa-credit-card" title="Get PRO version now!"></i>
+        </div>
+    </footer>
   </body>
 
+  <script src="./node_modules/jquery/dist/jquery.min.js" onload="window.$ = window.jQuery = module.exports;"></script>
   <script>
-    // You can also require other files to run in this process
-    require('./js/renderer.js')
+    require('./js/script.js');
+    require('./js/renderer.js');
   </script>
 </html>
